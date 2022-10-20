@@ -1,0 +1,96 @@
+/* **************** fonts *************** */
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik"), local("Rubik"),
+    url("/fonts/Rubik-Regular.woff2") format("woff2"),
+    url("/fonts/Rubik-Regular.woff") format("woff"),
+    url("/fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto"),
+    url("/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("/fonts/Roboto-Regular.woff") format("woff"),
+    url("/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Formular";
+  src: local("Formular"), local("Formular"),
+    url("/fonts/Formular.woff2") format("woff2"),
+    url("/fonts/Formular.woff") format("woff"),
+    url("/fonts/Formular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* ********* mixins ********** */
+@mixin fontRubik($size, $lineHeight) {
+  font-family: "Rubik";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+@mixin fontRoboto($size, $lineHeight) {
+  font-family: "Roboto";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+@mixin fontFormular($size, $lineHeight) {
+  font-family: "Formular";
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: 400;
+}
+@mixin grid($columns, $rows) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+}
+
+/* ***** Color ***** */
+$colorWhite: white;
+$colorBlack: black;
+
+/* ******** main  ******** */
+body {
+  min-width: 100%;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 0 auto;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+/* ********** container ************ */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0 1;
+}
+._container {
+  max-width: 1196px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  background-color: red;
+}
+.display-none {
+  display: none;
+}
