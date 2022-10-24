@@ -1,19 +1,19 @@
 /* **************** fonts *************** */
 @font-face {
   font-family: "Rubik";
-  src: local("Rubik"), local("Rubik"), url("/fonts/Rubik-Regular.woff2") format("woff2"), url("/fonts/Rubik-Regular.woff") format("woff"), url("/fonts/Rubik-Regular.ttf") format("truetype");
+  src: local("Rubik"), local("Rubik"), url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: local("Roboto"), local("Roboto"), url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff"), url("/fonts/Roboto-Regular.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Formular";
-  src: local("Formular"), local("Formular"), url("/fonts/Formular.woff2") format("woff2"), url("/fonts/Formular.woff") format("woff"), url("/fonts/Formular.ttf") format("truetype");
+  src: local("Formular"), local("Formular"), url("../fonts/Formular.woff2") format("woff2"), url("../fonts/Formular.woff") format("woff"), url("../fonts/Formular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -201,6 +201,12 @@ a {
   font-weight: 400;
 }
 
+.vacancie-left__data__second-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .filter-item__last {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +241,21 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
+}
+
+.vacancies__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-gap: 24px;
+}
+
+.vacancies__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
 }
 
 .vacancies_marg-top {
@@ -279,6 +300,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   grid-gap: 17px;
+  width: 220px;
 }
 
 .vacancie-left__data__item {
@@ -518,4 +540,93 @@ a {
 
 .footer-block__first-text {
   line-height: 157%;
+}
+
+@media (max-width: 420px) {
+  .main__h1 {
+    font-size: 32px;
+  }
+
+  .main__filter {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .main__filter > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .main__filter__padd-top {
+    padding-top: 40px;
+  }
+
+  .filter-item__last {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .vacancie__body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .vacancie__body > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .vacancie-left__img {
+    width: 230px;
+    height: 60px;
+  }
+
+  .footer__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer-right_margin-right {
+    margin-right: 0px;
+  }
+
+  .vacancie-right__title {
+    font-size: 22px;
+  }
+
+  .footer_margin-top {
+    margin-top: 64px;
+  }
+
+  .footer__body_margin-top {
+    margin-top: 32px;
+  }
+
+  .footer__footer__text {
+    font-size: 14px;
+  }
+
+  .footer-right__text {
+    font-size: 18px;
+  }
+
+  .footer__body {
+    grid-gap: 32px;
+  }
+
+  .footer-right__body {
+    grid-gap: 32px;
+  }
+
+  .fr-contact__tell,
+.fr-contact__email {
+    font-size: 22px;
+  }
 }

@@ -2,27 +2,27 @@
 @font-face {
   font-family: "Rubik";
   src: local("Rubik"), local("Rubik"),
-    url("/fonts/Rubik-Regular.woff2") format("woff2"),
-    url("/fonts/Rubik-Regular.woff") format("woff"),
-    url("/fonts/Rubik-Regular.ttf") format("truetype");
+    url("../fonts/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular.woff") format("woff"),
+    url("../fonts/Rubik-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), local("Roboto"),
-    url("/fonts/Roboto-Regular.woff2") format("woff2"),
-    url("/fonts/Roboto-Regular.woff") format("woff"),
-    url("/fonts/Roboto-Regular.ttf") format("truetype");
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Formular";
   src: local("Formular"), local("Formular"),
-    url("/fonts/Formular.woff2") format("woff2"),
-    url("/fonts/Formular.woff") format("woff"),
-    url("/fonts/Formular.ttf") format("truetype");
+    url("../fonts/Formular.woff2") format("woff2"),
+    url("../fonts/Formular.woff") format("woff"),
+    url("../fonts/Formular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -162,6 +162,11 @@ a {
 .filter-item__label {
   @include fontRubik(16px, 160%);
 }
+.vacancie-left__data__second-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .f-item_first {
 }
 .filter-item__last {
@@ -188,6 +193,10 @@ a {
   background-repeat: no-repeat;
   display: block;
 }
+.vacancies__items {
+  @include grid(1fr, auto);
+  grid-gap: 24px;
+}
 .vacancies_marg-top {
   margin-top: 32px;
 }
@@ -206,6 +215,7 @@ a {
   display: flex;
   flex-direction: column;
   grid-gap: 17px;
+  width: 220px;
 }
 .vacancie-left__data__item {
   display: flex;
@@ -344,4 +354,59 @@ a {
 }
 .footer-block__first-text {
   line-height: 157%;
+}
+
+@media (max-width: 420px) {
+  .main__h1 {
+    font-size: 32px;
+  }
+  .main__filter {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .main__filter__padd-top {
+    padding-top: 40px;
+  }
+  .filter-item__last {
+    justify-content: flex-start;
+  }
+  .vacancie__body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .vacancie-left__img {
+    width: 230px;
+    height: 60px;
+  }
+  .footer__body {
+    flex-direction: column;
+  }
+  .footer-right_margin-right {
+    margin-right: 0px;
+  }
+  .vacancie-right__title {
+    font-size: 22px;
+  }
+  .footer_margin-top {
+    margin-top: 64px;
+  }
+  .footer__body_margin-top {
+    margin-top: 32px;
+  }
+  .footer__footer__text {
+    font-size: 14px;
+  }
+  .footer-right__text {
+    font-size: 18px;
+  }
+  .footer__body {
+    grid-gap: 32px;
+  }
+  .footer-right__body {
+    grid-gap: 32px;
+  }
+  .fr-contact__tell,
+  .fr-contact__email {
+    font-size: 22px;
+  }
 }
