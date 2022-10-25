@@ -162,11 +162,7 @@ a {
 .filter-item__label {
   @include fontRubik(16px, 160%);
 }
-.vacancie-left__data__second-text {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 .f-item_first {
 }
 .filter-item__last {
@@ -193,6 +189,11 @@ a {
   background-repeat: no-repeat;
   display: block;
 }
+.vacancies {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 32px;
+}
 .vacancies__items {
   @include grid(1fr, auto);
   grid-gap: 24px;
@@ -215,7 +216,10 @@ a {
   display: flex;
   flex-direction: column;
   grid-gap: 17px;
-  width: 220px;
+}
+.vacancie-left__img {
+  object-fit: contain;
+  object-position: left;
 }
 .vacancie-left__data__item {
   display: flex;
@@ -244,13 +248,13 @@ a {
   display: flex;
   flex-direction: column;
   grid-gap: 16px;
-  height: 82px;
+  max-height: 82px;
   overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) -59.32%,
-    #ffffff 42.84%
-  );
+  transition: max-height 0.25s ease-in;
+}
+.vacancie-right__info__items.show-block {
+  max-height: 100%;
+  transition: max-height 0.25s ease-out;
 }
 .vacancie-right__info__text {
   padding-left: 12px;
@@ -274,6 +278,12 @@ a {
   color: #a3a6a9;
   cursor: pointer;
 }
+.show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer_margin-top {
   margin-top: 90px;
 }
@@ -366,6 +376,14 @@ a {
   }
   .main__filter__padd-top {
     padding-top: 40px;
+  }
+  .vacancie-left__data__items {
+    width: 220px;
+  }
+  .vacancie-left__data__second-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .filter-item__last {
     justify-content: flex-start;

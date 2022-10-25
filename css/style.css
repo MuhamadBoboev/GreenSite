@@ -201,12 +201,6 @@ a {
   font-weight: 400;
 }
 
-.vacancie-left__data__second-text {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .filter-item__last {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +235,17 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
+}
+
+.vacancies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 32px;
 }
 
 .vacancies__items {
@@ -300,7 +305,13 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   grid-gap: 17px;
-  width: 220px;
+}
+
+.vacancie-left__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .vacancie-left__data__item {
@@ -359,10 +370,16 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   grid-gap: 16px;
-  height: 82px;
+  max-height: 82px;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-59.32%, rgba(255, 255, 255, 0)), color-stop(42.84%, #ffffff));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -59.32%, #ffffff 42.84%);
+  -webkit-transition: max-height 0.25s ease-in;
+  transition: max-height 0.25s ease-in;
+}
+
+.vacancie-right__info__items.show-block {
+  max-height: 100%;
+  -webkit-transition: max-height 0.25s ease-out;
+  transition: max-height 0.25s ease-out;
 }
 
 .vacancie-right__info__text {
@@ -393,6 +410,18 @@ a {
 .vacancie-right__show {
   color: #a3a6a9;
   cursor: pointer;
+}
+
+.show-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer_margin-top {
@@ -561,6 +590,16 @@ a {
 
   .main__filter__padd-top {
     padding-top: 40px;
+  }
+
+  .vacancie-left__data__items {
+    width: 220px;
+  }
+
+  .vacancie-left__data__second-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .filter-item__last {
