@@ -4,163 +4,188 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://static.tildacdn.com/tild6163-3163-4562-b635-303039646339/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>CreenSite</title>
   </head>
 
   <body>
-    <wrapper class="wrapper">
-      <div class="page" >
+    <div class="wrapper">
+      <div class="page">
         <div class="_container main_container">
           <div class="main">
             <h1 class="main__h1 main__h1_padd-top">List of vacancies</h1>
             <div class="main__filter main__filter__padd-top">
               <div class="input-item f-item_first">
                 <label class="filter-item__label" for="time-select">Form</label>
-                <div class="filter-item__select" >
-                  <select name="form" class="text-color__grey filter-item__input f-item_first " id="time-select" >
+                <div class="filter-item__select">
+                  <select
+                    name="time-select"
+                    class="text-color__grey filter-item__input f-item_first"
+                    id="time-select"
+                  >
                     <option disabled>Not selected</option>
-                    <option value="dog">Full time</option>
-                    <option value="cat">Half time</option>
-                    <option value="hamster">Part time</option>
+                    <option class="time-select__option" value="full">
+                      Full time
+                    </option>
+                    <option class="time-select__option" value="half">
+                      Half time
+                    </option>
+                    <option class="time-select__option" value="part">
+                      Part time
+                    </option>
                   </select>
                 </div>
               </div>
               <div class="input-item f-item_second">
-                <label class="filter-item__label" >Position</label>
-                <input class="text-color__grey filter-item__input" placeholder="Unspecified" /></input>
+                <label for="search" class="filter-item__label">Position</label>
+                <input
+                  id="search"
+                  data-search="search"
+                  class="text-color__grey filter-item__input"
+                  type="text"
+                  placeholder="Unspecified"
+                />
               </div>
-              <div class="filter-item__last" >
+              <div class="filter-item__last">
                 <a href="#" class="filter-item__last__href">
-                  <p class="filter-item__label filter-item__last__text" >Clear sorting</p>
+                  <p class="filter-item__label filter-item__last__text">
+                    Clear sorting
+                  </p>
                 </a>
               </div>
-
             </div>
           </div>
-          <div class="vacancies vacancies_marg-top" >
-            <div data-list="list" class="vacancies__items" >
-              <div class="vacancie__item">
-                <div class="vacancie__body" >
-                  <div class="vacancie-left" >
-                    <div class="vacancie-left__img-block" >
-                      <div class="vacancie-left__img-pos" >
-                        <img class="vacancie-left__img" src="./img/1.png" width="373" height="95">
-                      </div>
-                    </div>
-                    <div class="vacancie-left__data-block vacancie-left__data-block_margin-top">
-                      <ul class="vacancie-left__data__items ">
-                        <li class="vacancie-left__data__item" >
-                          <p class="text-color__grey" >Form:</p>
-                          <p class="filter-item__label vacancie-left__data__second-text" >Full time </p>
-                        </li>
-                        <li class="vacancie-left__data__item" >
-                          <p class="text-color__grey" >Company: </p>
-                          <p class="filter-item__label vacancie-left__data__second-text" >SoloProtect </p>
-                        </li>
-                        <li class="vacancie-left__data__item" >
-                          <p class="text-color__grey" >Web: </p>
-                          <p class="filter-item__label vacancie-left__data__second-text" >https://www.soloprotect.com/uk/ </p>
-                        </li>
-                        <li class="vacancie-left__data__item" >
-                          <p class="text-color__grey" >Address: </p>
-                          <p class="filter-item__label vacancie-left__data__second-text" >United Kingdom </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="vacancie-right" >
-                    <h2 class="vacancie-right__title" >.Net Software Developer (GIS experience)</h2>
-                    <div class="vacancie-text vacancie-right__subtitle" >We are looking for an experienced and talented Software Developer to develop, test, document, and implement solutions for SoloProtect clients and devices. The ideal candidate will be self-motivated, have experience working in agile teams, and excellent communication skills</div>
-                    <div class="vacancie-right__info" >
-                      <p class="vacancie-text vacancie-right__info__title">Success Snapshot:</p>
-                      <ul class="vacancie-right__info__items" >
-                        <li class="vacancie-right__info__item" >
-                          <p class="vacancie-text vacancie-right__info__text" >Develop solutions for SoloProtect product offerings using .NET languages and your experience of GIS solutions</p>
-                        </li>
-                        <li class="vacancie-right__info__item" >
-                          <p class="vacancie-text vacancie-right__info__text" >Develop solutions for SoloProtect product offerings using .NET languages and your experience of GIS solutions</p>
-                        </li>
-                        <li class="vacancie-right__info__item" >
-                          <p class="vacancie-text vacancie-right__info__text" >Develop solutions for SoloProtect product offerings using .NET languages and your experience of GIS solutions</p>
-                        </li>
-                        <li class="vacancie-right__info__item" >
-                          <p class="vacancie-text vacancie-right__info__text" >Develop solutions for SoloProtect product offerings using .NET languages and your experience of GIS solutions</p>
-                        </li>
-                        <li class="vacancie-right__info__item" >
-                          <p class="vacancie-text vacancie-right__info__text" >Develop solutions for SoloProtect product offerings using .NET languages and your experience of GIS solutions</p>
-                        </li>
-                        <li class="vacancie-right__info__item" >
-                          <p class="vacancie-text vacancie-right__info__text" >Develop solutions for SoloProtect product offerings using .NET languages and your experience of GIS solutions</p>
-                        </li>
-                      </ul>
-                      <div class="vacancie-right__bottom" >
-                        <a class="vacancie-text vacancie-right__show" >more details</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="show-more" >
-              <a class="show-more" >Show more</a>
+          <div class="vacancies vacancies_marg-top">
+            <div data-list="list" class="vacancies__items"></div>
+            <div class="show-more">
+              <a class="show-more__btn">Show more</a>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer footer_margin-top" >
-        <div class="_container" >
-          <h2 class="main__h1 footer__h2" >Leave a request</h2>
-          <div class="footer__body footer__body_margin-top" >
-            <div class="footer-left" >
-              <div class="footer-left__body" >
-                <ul class="footer__form" >
+      <footer class="footer footer_margin-top">
+        <div class="_container">
+          <h2 class="main__h1 footer__h2">Leave a request</h2>
+          <div class="footer__body footer__body_margin-top">
+            <div class="footer-left">
+              <form
+                action="https://echo.htmlacademy.ru"
+                method="post"
+                class="footer-left__body"
+              >
+                <ul class="footer__form">
                   <li class="input-item f-item_second">
-                    <label class="filter-item__label">Your name</label>
-                    <input class="text-color__grey filter-item__input " placeholder="Please introduce yourself">
+                    <label for="form-name" class="filter-item__label"
+                      >Your name</label
+                    >
+                    <input
+                      id="form-name"
+                      class="text-color__grey filter-item__input"
+                      type="text"
+                      name="Name"
+                      placeholder="Please introduce yourself"
+                      required
+                    />
+                  </li>
+                  <li class="input-item f-item_second input-item__email">
+                    <label for="form-email" class="filter-item__label"
+                      >Email</label
+                    >
+                    <input
+                      id="form-email"
+                      data-email="email"
+                      class="text-color__grey filter-item__input"
+                      type="text"
+                      name="Address"
+                      placeholder="ivanov@mail.ru"
+                      required
+                    />
+                    <div class="input-item__error input-item__error_1">
+                      <p>Адрес</p>
+                    </div>
                   </li>
                   <li class="input-item f-item_second">
-                    <label class="filter-item__label">Email</label>
-                    <input class="text-color__grey filter-item__input " placeholder="ivanov@mail.ru">
+                    <label for="form-phone" class="filter-item__label"
+                      >Phone number</label
+                    >
+                    <input
+                      id="form-phone"
+                      class="text-color__grey filter-item__input"
+                      type="text"
+                      name="Phone-number"
+                      placeholder="+7 (999) 123-45-78"
+                      required
+                    />
+                    <div class="input-item__error input-item__error_2">
+                      <p>Номер</p>
+                    </div>
                   </li>
                   <li class="input-item f-item_second">
-                    <label class="filter-item__label">Phone number</label>
-                    <input class="text-color__grey filter-item__input " placeholder="+7 (999) 123-45-78">
-                  </li>
-                  <li class="input-item f-item_second">
-                    <label class="filter-item__label">Comment</label>
-                    <input class="text-color__grey filter-item__input " placeholder="Message text">
+                    <label for="form-comment" class="filter-item__label"
+                      >Comment</label
+                    >
+                    <input
+                      id="form-comment"
+                      class="text-color__grey filter-item__input"
+                      type="text"
+                      name="Comment"
+                      placeholder="Message text"
+                    />
                   </li>
                 </ul>
-                <div class="footer__btn-block" >
-                  <a href="#" class="footer-btn">Send</a>
+                <div class="footer__btn-block">
+                  <button type="submit" class="footer-btn">Send</button>
+                  <a class="footer-btn footer-btn__test"
+                    >Проверка на валидность</a
+                  >
                 </div>
-                <div class="footer__footer footer__footer_margin-top" >
-                  <p class="footer__footer__text">By clicking "Send" you confirm your consent to the <span class="footer__footer__noted" >processing of personal data</span></p>
+                <div class="footer__footer footer__footer_margin-top">
+                  <p class="footer__footer__text">
+                    By clicking "Send" you confirm your consent to the
+                    <span class="footer__footer__noted"
+                      >processing of personal data</span
+                    >
+                  </p>
                 </div>
-              </div>
+              </form>
             </div>
-            <div class="footer-right footer-right_margin-right" >
-              <div class="footer-right__body" >
-                <p class="footer-right__text" >We will advise you and help you start a new project</p>
-                <div class="footer-right__fr-contact" >
-                  <a href="#" class="fr-contact__tell">+7 499 391-66-69</a>
-                  <a href="#" class="fr-contact__email">mail@greensight.ru</a>
+            <div class="footer-right footer-right_margin-right">
+              <div class="footer-right__body">
+                <p class="footer-right__text">
+                  We will advise you and help you start a new project
+                </p>
+                <div class="footer-right__fr-contact">
+                  <a href="tel:+74993916669" class="fr-contact__tell"
+                    >+7 499 391-66-69</a
+                  >
+                  <a href="mailto:mail@greensight.ru" class="fr-contact__email"
+                    >mail@greensight.ru</a
+                  >
                 </div>
-                <div class="footer-right__footer-block" >
-                  <p class="footer-block__first-text" >Moscow, Zelenograd, Central Ave., bldg. 305, 3rd floor</p>
-                  <p class="footer-block__last-text" >How to get there?</p>
+                <div class="footer-right__footer-block">
+                  <p class="footer-block__first-text">
+                    Moscow, Zelenograd, Central Ave., bldg. 305, 3rd floor
+                  </p>
+                  <a
+                    href="https://yandex.ru/maps/-/CCUZZWgMlD"
+                    class="footer-block__last-text"
+                    >How to get there?</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
-    </wrapper>
-  <script src="./js/script.js"></script>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
-
 </html>
